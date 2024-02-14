@@ -1,25 +1,14 @@
-import { SafeAreaView, StyleSheet, Text } from "react-native";
-import styled from "styled-components/native";
+import { SafeAreaView } from "react-native";
+import Login from "./modules/login";
 
-// Exemplo de declaração styled components
-const TextNew = styled.Text`
-    color: aqua;
-`
 
 const App = () => {
 
     return (
         <SafeAreaView>
-            <Text style={styles.container}>Testando</Text>
-            <TextNew>NOVO TESTE</TextNew>
+            <Login/>
         </SafeAreaView>
     )
 };
-
-const styles = StyleSheet.create({
-    container: {
-        color: 'blue'
-    }
-})
 
 export default App;
