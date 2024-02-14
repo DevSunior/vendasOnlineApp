@@ -1,12 +1,14 @@
 import { TextInputProps } from "react-native/types";
 import { ContainerInput } from "./input.style";
 
-type InputProps = TextInputProps;
+interface InputProps extends TextInputProps {
+    margin?: string
+}
 
-const Input = ({ ...props }: InputProps) => {
+const Input = ({margin, ...props}: InputProps) => {
 
     return (
-        <ContainerInput { ...props }/>
+        <ContainerInput margin={margin} {...props}/>
     )
 
 }
