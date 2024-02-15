@@ -12,7 +12,6 @@ const Login = () => {
     return (
         <View>
             <ContainerLogin>
-                <Text>Login</Text>
                 <Input />
                 <Button title="ENTRAR" margin="15px" onPress={handleOnPress}/>
             </ContainerLogin>
