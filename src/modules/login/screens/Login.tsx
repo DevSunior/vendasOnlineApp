@@ -13,7 +13,7 @@ const Login = () => {
         <View>
             <ContainerLogin>
                 <Input />
-                <Button type="TITLE" title="ENTRAR" margin="15px" onPress={handleOnPress}/>
+                <Button type="BUTTON_BOLD" title="ENTRAR" margin="15px" onPress={handleOnPress}/>
             </ContainerLogin>
         </View>
     )
